@@ -18,11 +18,17 @@
 </head>
 
 <body>
+
     <header>
         <img src="../assets/WhatsApp Image 2024-04-13 at 14.57.59.jpeg" alt="Foto de flaviana">
-        <h1>Flaviana silva</h1>
-        <h3>Futura desenvolvedora de software</h3>
-    </header>
+        <h1 id="nome-perfil"> Flaviana silva</h1>
+        <h3 id="eventoSubtitulo">Futura desenvolvedora de software</h3>
+        <button onclick="manipularElementos()">selecionar</button>
+        <button onclick="navegarEManipularDOM()">Navegar</button>
+        <button onclick="manipularElementosComMetodosDOM()">Manipular</button>
+        <button onclick="manipularEstilos()">Estilizar</button>
+        <button id="eventoBotao">Eventos</button>
+  </header>
 
     <nav>
         <ul>
@@ -46,5 +52,12 @@
         <p>°Monitora escolar na Erem João Vicente de Queiroz-Usina (2023-2024)</p>
     </section>
     <footer>Desenvolvido com amor por Flavia silva S2</footer>
+
+    <script src="scripts/script.js"></script>
+    <script>
+        window.onload = function () {
+            manipularElementosEventos();
+        }
+    </script>
 </body>
 </html> 
